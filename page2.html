@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Panel - ConnectBlox</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="groupinfo.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/">Dashboard</a>
+      <a href="/page2.html" aria-current="page">Command Panel</a>
+    </nav>
+    <main>
+      <h1>Commands</h1>
+      <button class="button" onclick="cgi()">Group Description</button>
+      <script>
+        function cgi() {
+  const noblox = require('noblox.js')
+  async function startApp () {
+      // Replace the parameter in setCookie() with your .ROBLOSECURITY cookie.
+      const currentUser = await noblox.setCookie('_|WARNING:-DO-NOT-SHARE-THIS.--Sharing-this-will-allow-someone-to-log-in-as-you-and-to-steal-your-ROBUX-and-items.|_8C628C7E4DEB75DFC0182B52C28FA992ED078DE1A845C9EBAB3461A94D3C089BB4A952829C9EC23907F0F1F0247FDA771BE1DEB2F5983139E0DC61E381F942735E330315243D10F3D1195FA3D6AF874B61E7DD2BC351E10E4E83BF05B6CE92679EE099BB9D052F419D0238EFBFD8EA525070FF683EA60384AF587EDBA690259E765ADED62763D13B7F546B14C8DE0E3324A144E0E94AA078DE4A740816E53004CE68D26829A8EFC0D7FF3544563A5207E740EA65EAD35C8A29C347C6F0CFE6EE06BBCBD475B5EAD2458EC106C522F763670CA10D5E8A87634F887875F9097FCCD342A1B04F756A8E65FBDF6140E090BE8EBF1858613E161C10374F7818E3EA5CCABDD6FF483D6BC1992E7EBD4513652D402E4ADDF9B42E4CEF422D8F526C31CD5B1DD8D516233BA80852D41E2DBDF8579C3F0FB2BD7735D13D35C1E845EDFEF087F02AF0AA826C40F2F693021E34A963CA0CB28EE7B7CE285A3D5C9818FEB68EEEC84F703E9274BCBB8D64A48C40E03FE8B4759A24AC72754FBA84C6D15A40A64C8BFA86C9077F987DB79C288A31191907DD559345639DB4120C873BF669014C6CD200D455C8AE281D42AA6EE10A3B1F4CEBC74C4F293E5A3BE431EB4D5765F6800C3213') 
+      console.log(`Logged in as ${currentUser.UserName} [${currentUser.UserID}]`)
+      const groupInfo = await noblox.getGroup(here)
+      console.log(groupInfo)
+  }
+  startApp()
+  }
+  </script>
+    </main>
+  </body>
+</html>
